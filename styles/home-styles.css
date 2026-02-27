@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Bangers&family=Oswald:wght@200..700&display=swap');
+
+html, body {
+    margin: 0;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    padding: 0px 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+h1 {
+    font-family: "Alumni Sans Inline One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    color: #007EFF;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: white;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+h2 span {
+    color: #007EFF;
+    font-size: 2.2rem;
+}
+
+nav {
+    display: flex;
+    gap: 3rem;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-style: normal;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0%;
+    background-color: #007EFF;
+    transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    transition: color 0.4s ease;
+    color: #64aff9;
+}
+
+.home-btn-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.home-btn-container a {
+    text-decoration: none;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-style: normal;
+}
+
+.home-btn-container a{
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  max-width: 300px;
+  width: 100%;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  transition: all 1s ease-in;
+}
+
+.home-btn-container a:hover {
+  color: #007EFF;
+}
+
+.home-btn-container svg {
+  height: 80px;
+  left: 0;
+  top: -20px;
+  position: absolute;
+  width: 100%;
+}
+
+.home-btn-container rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 450, 0;
+  transition: all 0.5s linear;
+}
+
+.home-btn-container a:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 20, 300;
+  stroke-dashoffset: 48;
+  stroke: #007EFF;
+  transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+
+.home-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10rem;
+}
