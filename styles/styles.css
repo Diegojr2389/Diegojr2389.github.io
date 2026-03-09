@@ -26,7 +26,7 @@ h2 {
     font-style: normal;
     font-size: 3rem;
     color: white;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     width: fit-content;
 }
 
@@ -42,7 +42,7 @@ h3 {
     font-family: "Alumni Sans Inline One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     margin: 0;
     width: fit-content;
@@ -58,12 +58,14 @@ h3::after {
 
 p {
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+    font-family: "Oswald", sans-serif;
 }
 
 a {
     color: #007EFF;
     font-size: 1.25rem;
+    word-break: break-word;
 }
 
 nav {
@@ -105,5 +107,89 @@ nav {
     color: #64aff9;
 }
 .citation {
-    margin-bottom: 3rem;
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: start;
+}
+.user-container {
+    display: flex;
+    justify-content: space-around;
+}
+.user-subcontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(67, 66, 66, 0.5);
+    padding: 2rem 2rem 1rem 2rem;
+    width: 28%;
+    border-radius: 1rem;
+}
+.bullet-point {
+    width: 2rem;
+    height: 2rem;
+    margin: 21px 21px 0 0;
+}
+.resources-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #007EFF;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.resources-subcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.resources-card {
+    position: relative;
+    padding: 1rem 2rem 0 2rem;
+    margin-bottom: 2rem;
+    width: 40%;
+}
+
+.resources-card::before,
+.resources-card::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 50%;
+}
+
+.resources-card::before {
+    bottom: 0px;
+    left: 0px;
+    border-left: 2px solid #64aff9;
+    border-bottom: 2px solid #64aff9;
+}
+
+.resources-card::after {
+    top: 0px;
+    right: 0px;
+    border-top: 2px solid #64aff9;
+    border-right: 2px solid #64aff9;
+}
+
+.resources-card-inner::before,
+.resources-card-inner::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 30%;
+}
+
+.resources-card-inner::before {
+    top: 0px;
+    left: 0px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.resources-card-inner::after {
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
 }
