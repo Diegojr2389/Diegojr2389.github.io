@@ -24,7 +24,7 @@ h2 {
     font-family: "Alumni Sans Inline One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
     margin: 0 0 20px 0;
     width: fit-content;
@@ -192,4 +192,27 @@ nav {
     right: 0px;
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
+}
+
+.experience-container {
+    position: relative;
+}
+
+.experience-subcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artifact-card {
+    width: 45%;
+}
+
+.ui-img {
+    width: auto;
+    height: 40%;
+}
+
+.arch-diagram-img {
+    height: auto;
+    width: 90%;
 }
