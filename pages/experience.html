@@ -48,26 +48,87 @@
         <h2>User Interface</h2>
         <div class="experience-subcontainer">
             <div class="artifact-card">
-                <h3>UI w/React Native</h3>
+                <h3>UI with React Native</h3>
                 <p>
                     When I first started working on the user interface, I was using React Native and I had a very basic design in mind. 
                     I wanted to keep it simple and clean, with a focus on functionality rather than aesthetics. The UI was going to have a 
-                    bottom navigation bar with four tabs: Home, Workouts, Progress and Profile. The Home tab was going to be the main screen
-                    where the user would land once they logged in. The Workouts tab was going to be where the user could access the real-time 
-                    form feedback feature and also view different workouts. The Progress tab was going to be where the user could track their 
-                    progress and see their workout history. The Profile tab was going to be where the user could view and edit their profile
-                    information.
+                    bottom navigation bar with four tabs:
                 </p>
+                <ul>
+                    <li><span>Home</span> - Main screen where the user would land once they logged in</li>
+                    <li><span>Workout</span> - Screen for viewing and selecting different workouts and where you can access the real-time form feedback feature</li>
+                    <li><span>Progress</span> - Screen for tracking workout progress and viewing history</li>
+                    <li><span>Profile</span> - Screen for viewing and editing user profile information</li>
+                </ul>
                 <img class="ui-img" src="../images/UI-before.jpeg">
             </div>
             <div class="artifact-card">
-                <h3>UI w/Kotlin</h3>
+                <h3>UI with Kotlin</h3>
                 <p>
                     After switching to Kotlin for the frontend, I had to redesign the user interface to fit the new technology. They look
-                    relatively the same in terms of design, but the main difference is that I replaced the progress tab with a chatbot tab. 
-                    The chatbot tab is where the user can access the chatbot feature and ask it questions about different weightlifting topics.
+                    relatively the same in terms of design, but the main difference is that I replaced the progress tab with a <span>chatbot</span> tab. 
+                    Therefore, the UI now has a bottom navigation bar with the following four tabs:
                 </p>
+                <ul>
+                    <li><span>Home</span> - Main screen where the user would land once they logged in</li>
+                    <li><span>Workout</span> - Screen for viewing and selecting different workouts and where you can access the real-time form feedback feature</li>
+                    <li><span>Chatbot</span> - Screen for accessing the chatbot feature and ask it questions about different weightlifting topics</li>
+                    <li><span>Profile</span> - Screen for viewing and editing user profile information</li>
+                </ul>
                 <img class="ui-img" src="../images/UI-now.jpeg">
+            </div>
+        </div>
+
+        <h2>Pose Detection API</h2>
+        <div class="experience-subcontainer" id="experience-subcontainer-column">
+            <div class="artifact-card-api">
+                <h3>MediaPipe with Python</h3>
+                <p>
+                    At the start of this project, I had initially planned to use the MediaPipe Pose API instead of the ML Kit Pose API.
+                    As I started learning how to use MediaPipe, I created a small python-based prototype that tracked joints in
+                    real-time. Although my project was going to be in JavaScript, this prototype was still extremely useful as it helped 
+                    me understand the fundamentals of working with the MediaPipe API.
+                </p>
+                <img class="pose-detection-horiz-img" src="../images/mediapipe-py.png">
+            </div>
+            <div class="artifact-card-api">
+                <h3>MediaPipe Code with ReactJS</h3>
+                <p>
+                    As I started working with the MediaPipe API with ReactJS, I quickly ran into several issues, especially when 
+                    working with the camera. Issues with camera permissions, inconsistent video feed initialization, and difficulty 
+                    linking the camera stream to the pose detection pipeline made it hard to get the system working reliably. The
+                    reason why I have code instead of an image of the pose detection working as the artifact, is because I was not 
+                    able to get the landmarks to track properly with the MediaPipe and ReactJS approach.
+                </p>
+                <img class="pose-detection-horiz-img" src="../images/mediapipe-code.png">
+            </div>
+            <div class="artifact-card-api">
+                <h3>MediaPipe with Android Studio and Kotlin</h3>
+                <p>
+                    Since I was having lots of issues with ReactJS, I decided to switch to android development using Android Studio 
+                    and Kotlin. When I was about to finish setting up MediaPipe with the camera, I ran into another issue. The image 
+                    format I was receiving was YUV and the format MediaPipe needs is RGB. I also faced compatibility issues with newer 
+                    Android devices that use a 16KB memory page size, which MediaPipe did not fully support due to the lack of 
+                    maintenance of the APIs library. These challenges, along with the unmaintained library, made it difficult to 
+                    continue using MediaPipe.
+                </p>
+                <img class="pose-detection-horiz-img" src="../images/mediapipe-kotlin.png">
+            </div>
+            <div class="artifact-card-api">
+                <h3>ML Kit Pose API with Kotlin</h3>
+                <p>
+                    Due to all the challenges I was facing with MediaPipe, and the massive time spent trying to debug the issues I kept
+                    running into with it, I decided to stop using the API, and switch to using the ML Kit Pose API. Since the 
+                    camera setup stayed relatively the same, I spent most of my time learning how to use the ML Kit Pose API during this
+                    transition. Being able to finally set up the real-time tracking of the landmarks within my app was extremely rewarding.
+                    This change ultimately made development much smoother and allowed me to continue making steady progress 
+                    on my application.
+                </p>
+                <div id="artifact-card-api-inner">
+                    <img class="pose-detection-vert-img" src="../images/mlkit-camera-setup.png">
+                    <img class="pose-detection-vert-img" src="../images/mlkit-camera-1.jpeg">
+                    <img class="pose-detection-vert-img" src="../images/mlkit-camera-2.jpeg">
+                </div>
             </div>
         </div>
     </div>

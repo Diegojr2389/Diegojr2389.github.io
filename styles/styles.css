@@ -201,18 +201,52 @@ nav {
 .experience-subcontainer {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 3rem;
 }
 
 .artifact-card {
     width: 45%;
 }
 
+.artifact-card-api {
+    width: 80%;
+    margin-bottom: 3rem;
+}
+
 .ui-img {
-    width: auto;
-    height: 40%;
+    width: 50%;
+    height: auto;
 }
 
 .arch-diagram-img {
     height: auto;
     width: 90%;
+}
+.pose-detection-horiz-img {
+    height: auto;
+    width: 100%;
+}
+.pose-detection-vert-img {
+    height: auto;
+    width: 30%;
+}
+
+li {
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Oswald", sans-serif;
+}
+
+span {
+    color: #007EFF;
+}
+
+#experience-subcontainer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#artifact-card-api-inner {
+    display: flex;
+    justify-content: space-between;
 }

@@ -20,52 +20,62 @@
     <div>
         <h2>Project Selection and Motivation</h2>
         <p>
-            The idea for my capstone project came from one day speaking to a relative of mine, and them telling me that they
-            would not be comfortable going to the gym due to them not knowing how to do weightlifting exercises correctly. 
-            They told me they would feel a bit embarrassed of performing the exercises incorrectly in front of lots of people.
-            I then thought about how I could help them and, in the process, also help other people. That is when I pondered and 
-            came up with the idea of creating an app that they and others could use in order to correctly do an exercise comfortably, 
-            with proper form, without the prying eyes of others. 
+            The idea for my capstone project came from one day speaking to a relative of mine, and them telling me that they would not be 
+            comfortable going to the gym due to them not knowing how to do weightlifting exercises correctly. They told me they would feel 
+            a bit embarrassed of performing the exercises incorrectly in front of lots of people. Hearing this made me think about how many 
+            people might feel the same way, and so, I started wondering if there was a way I could help. 
         </p>
         <p>
-            Throughout the project I stayed motivated for several reasons, one of them obviously being, to help my relative. Apart 
-            from that reason, I was also motivated by the fact that this would be the first large project I would be working on and 
-            I would be very proud of myself if I achieved what I was planning to do from the start. Another motivating factor was that 
-            this project also aligns with my future goals and aspirations. 
+            That moment became the starting point to my project. The idea I had in mind was for people to practice weightlifting exercises, 
+            comfortably, in a private environment. From this idea, I ended up developing the concept of a mobile app that gives the user 
+            real-time feedback on their form for different weightlifting exercises. To ultimately, help them build confidence without the 
+            pressure of being watched.
         </p>
         <p>
-            I want to be a successful software engineer that works on projects that help thousands of people. May that be by building 
-            web apps, mobile apps, or other technologies, as long as I am creating solutions that end up having a meaningful impact on 
-            people's lives, I will always have a reason to stay motivated when working on any software engineering project such as this one.
+            As the project progressed, I was able to stay motivated for several reasons. I was driven not only by the desire of helping my 
+            relative, but also by the opportunity of taking on a large-scale project for the first time. I knew that if I put in lots of 
+            effort and successfully completed the project, it would be something I could be proud of. At the same time, this project aligned 
+            with my future goals and aspirations: to become a successful software engineer who builds meaningful applications that positively 
+            impact the lives of thousands, if not millions of people. 
         </p>
 
         <h2>Research and External Information</h2>
         <p>
-            Throughout the project, I heavily relied on outside resources in order to improve the quality and academic grounding of my work. 
-            Since I had never developed an Android application before this capstone project, I relied on documentation, tutorials and AI tools 
-            in order to build my first android application and to troubleshoot issues that arose during development. 
+            Because this was my first time developing an android application, I knew that I would have to rely on lots of external resources. 
+            I spent a significant amount of time looking through documentations, tutorials and AI tools in order to troubleshoot issues that 
+            arose during development. 
         </p>
         <p>
-            I also reached out to an expert, who provided valuable guidance on technical and design considerations, including privacy concerns 
-            when handling camera data, potential approaches for training machine learning models, and strategies for managing the scope of the 
-            project. Their guidance made me realize that not everything has to be fully automated: Hardcode logic is fine as long as it supports 
-            the overall objective. They taught me about the concept of timeboxing, which helped me when I was stuck on developing the real-time 
-            form feedback feature of my app due to the tools I had been using. He also gave me some pointers related to machine learning which 
-            will definitely help me with the implementation of the chatbot feature of my app.
+            In addition to these resources, I reached out to an expert, who provided me with valuable guidance. They gave me insights on 
+            technical and design considerations, such as privacy concerns when handling camera data and strategies for managing the scope 
+            of a project. An important lesson I learned was that not everything has to be fully automated; sometimes simpler, hardcoded logic 
+            is fine as long as it supports the overall objective. 
+        </p>
+        <p>
+            They also introduced me to the concept of timeboxing, which became especially useful when I was stuck on developing the real-time 
+            form feedback feature of my app. Instead of trying to fix the same issue over and over again, I learned to step back, set limits, 
+            and rethink my approach. Their advice not only helped me overcome immediate challenges, but it also gave me strategies I can 
+            continue to use in future projects.
         </p>
 
         <h2>Successes and Challenges</h2>
         <p>
-            The biggest success of my project was implementing the real-time pose feedback feature of my application. I spent significant time 
-            troubleshooting, experimenting with different approaches, and reviewing documentations and tutorials in order to make the feature a 
-            reality, so being able to implement the feature was extremely rewarding. 
+            One of the most rewarding moments of the project came when I was finally able to implement the real-time pose feedback feature 
+            of my application. I spent significant time troubleshooting, experimenting with different approaches, and reviewing documentations 
+            and tutorials in order to make the feature a reality. There were many moments throughout the project where progress felt slow, 
+            but seeing the feature work in real time made all of the effort worthwhile. 
         </p>
         <p>
-            The biggest challenge I ran into throughout the project was not being able to set up the Pose Detection API in my project. I was 
-            initially using MediaPipe with React Native, but I quickly ran into compatibility and configuration issues that prevented the API 
-            from functioning correctly. After lots of troubleshooting and constant back and forth, I reconsidered my approach and switched to 
-            Mobile development using Android Studio, Kotlin and from MediaPipe to the ML Kit Pose API. Although the setback delayed my progress, 
-            it ultimately led to smoother development and led to me being able to successfully continue the development of my app.
+            However, this success came after overcoming the biggest challenge I ran into during the project. Early on, I tried setting up 
+            MediaPipe, a Pose Detection API with React Native, but I quickly ran into compatibility and configuration issues that prevented 
+            the API from functioning correctly. After lots of troubleshooting and constant back and forth attempts to fix the problem, I was 
+            still unable to get the API working. 
+        </p>
+        <p>
+            At that point, I decided to step back and reconsider my approach. After lots of thinking, I transitioned from React Native to 
+            android development using Android Studio and Kotlin. As for the APIs, I switched from MediaPipe to ML Kit Pose. Although the 
+            setback delayed my progress, it ultimately led to smoother development and led to me being able to successfully continue the 
+            development of my app.
         </p>
 
         <h2>Reflection & Improvements</h2>
@@ -79,8 +89,9 @@
         <p>
             Thinking about the time frame, if I had more time I think I would have also trained my own landmark detection model instead of using 
             the ML Kit Pose API. It would have been much more effective to give feedback to the users of my app. I say this because, the ML Kit 
-            Pose API has 33 fixed landmarks, not including landmarks on the spine. These landmarks are crucial since exercises like the squat and 
-            the deadlift need your back to be straight in order to prevent serious injuries.
+            Pose API has 33 fixed landmarks, not including landmarks on the spine. These spine landmarks are crucial since exercises like the squat and 
+            the deadlift need your back to be straight in order to prevent serious injuries. A custom model could provide more helpful feedback,
+            and ultimately, provide more value to the users of my app.
         </p>
 
         <h2>Conclusion</h2>
@@ -93,7 +104,8 @@
             Looking at the future of my app, I plan to make my app more scalable and more visually appealing. I plan to train an AI chatbot that 
             can answer questions my users might have about weightlifting, or other exercise related questions. I also plan to make my own pose 
             detection model in order to give more helpful feedback to my users including landmarks for the spine and maybe other landmarks I 
-            find to be helpful in giving better feedback. But most importantly, I plan to develop my app for IOS, in order for more people to use it.
+            find to be helpful in giving better feedback. Finally, I plan to expand the app to IOS, so that it can reach a wider audience and 
+            help more people.
         </p>
     </div>
 
