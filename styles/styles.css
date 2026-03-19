@@ -5,6 +5,11 @@ body {
     padding: 0px 40px;
 }
 
+/* #user-body {
+    background-image: url("../images/brick-wall.jpg");
+    position: relative;
+} */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -66,6 +71,11 @@ a {
     color: #007EFF;
     font-size: 1.25rem;
     word-break: break-word;
+    transition: color ease 0.5s;
+}
+
+a:hover {
+    color:#64aff9;
 }
 
 nav {
@@ -106,37 +116,69 @@ nav {
     transition: color 0.4s ease;
     color: #64aff9;
 }
+
 .citation {
     display: flex;
     margin-bottom: 1.5rem;
     align-items: start;
 }
+
+#user-body {
+    background-image: url("../images/brick-wall.jpg");
+    position: relative;
+}
+
 .user-container {
     display: flex;
-    justify-content: space-around;
+    gap: 2rem;
+    border-radius: 1rem;
 }
+
 .user-subcontainer {
     display: flex;
+    overflow: hidden;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(67, 66, 66, 0.5);
     padding: 2rem 2rem 1rem 2rem;
     width: 28%;
     border-radius: 1rem;
+    background-size: cover;
+    border: 1px inset rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
 }
+
 .bullet-point {
     width: 2rem;
     height: 2rem;
     margin: 21px 21px 0 0;
 }
+
 .resources-container {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     border: 2px solid #007EFF;
     padding: 2rem;
     margin-bottom: 1rem;
+    transition: background-image ease 1s;
 }
+
+.resources-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/brick-wall.jpg");
+    background-size: cover;
+    opacity: 0;
+    transition: opacity ease 1s;
+    z-index: -1;
+}
+
+.resources-container:hover::before {
+    opacity: 1;
+}
+
 .resources-subcontainer {
     display: flex;
     flex-wrap: wrap;
@@ -148,6 +190,7 @@ nav {
     padding: 1rem 2rem 0 2rem;
     margin-bottom: 2rem;
     width: 40%;
+    transition: backdrop-filter ease 0.5s;
 }
 
 .resources-card::before,
@@ -156,6 +199,8 @@ nav {
     position: absolute;
     width: 30%;
     height: 50%;
+    transition: width ease 1s, border-color ease 1.5s;
+    pointer-events: none;
 }
 
 .resources-card::before {
@@ -178,6 +223,8 @@ nav {
     position: absolute;
     width: 50%;
     height: 30%;
+    transition: height ease 1s, border-color ease 1.5s;
+    pointer-events: none;
 }
 
 .resources-card-inner::before {
@@ -192,6 +239,22 @@ nav {
     right: 0px;
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
+}
+
+.resources-card:hover {
+    backdrop-filter: blur(4px);
+}
+
+.resources-card:hover::before,
+.resources-card:hover::after {
+    width: 50%;
+    border-color: #007EFF;
+}
+
+.resources-card:hover .resources-card-inner::before,
+.resources-card:hover .resources-card-inner::after {
+    height: 50%;
+    border-color: #007EFF;
 }
 
 .experience-container {
@@ -250,3 +313,5 @@ span {
     display: flex;
     justify-content: space-between;
 }
+
+
